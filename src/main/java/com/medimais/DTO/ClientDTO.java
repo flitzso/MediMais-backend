@@ -8,6 +8,14 @@ public class ClientDTO {
     public ClientDTO() {
     }
 
+
+    public ClientDTO(int clientid, String clientname, String email, String password) {
+        this.clientid = clientid;
+        this.clientname = clientname;
+        this.email = email;
+        this.password = password;
+    }
+
     public int getClientid() {
         return clientid;
     }
@@ -37,13 +45,6 @@ public class ClientDTO {
     }
 
     public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public ClientDTO(int clientid, String clientname, String email, String password) {
-        this.clientid = clientid;
-        this.clientname = clientname;
-        this.email = email;
         this.password = password;
     }
 }
