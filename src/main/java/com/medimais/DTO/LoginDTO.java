@@ -7,6 +7,11 @@ public class LoginDTO {
     public LoginDTO() {
     }
 
+    public LoginDTO(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -23,8 +28,4 @@ public class LoginDTO {
         this.password = password;
     }
 
-    public LoginDTO(String email, String password) {
-        this.email = email;
-        this.password = password;
-    }
 }
